@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">Education Management System</a>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="management.html">Management</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+    <div class="header form-input">
+        ข้อมูลนักเรียน/นักศึกษา
+      </div>
+      <div class="flex form-input">
+        <div class="header-form">ชื่อจริง</div>
+        <input class="form" name="firstname" type="text" required placeholder="กรุณากรอกชื่อจริง">
+      </div>
+      <div class="flex form-input">
+        <div class="header-form">นามสกุล </div>
+        <input class="form" name="lastname" type="text" required placeholder="กรุณากรอกนามสกุล">
+      </div>
+      <div class="flex form-input">
+        <div class="header-form">อายุ</div>
+        <input class="form" name="age" type="number" min="0" max="100" required placeholder="กรุณากรอกอายุ">
+      </div>
+      <div class="flex form-input">
+        <div class="header-form">ที่อยู่ </div>
+        <input class="form" name="address" type="text" required placeholder="กรุณากรอกที่อยู่">
+      </div>
+
+      <div class="flex form-input">
+        <div class="header-form">ระดับการศึกษา </div>
+        <div class="flex">
+        <div>
+          <input name="education_level" type="radio" value="ประถมศึกษา"> ประถมศึกษา
+        </div>
+        <div>
+          <input name="education_level" type="radio" value="มัธยมศึกษา(ต้น)"> มัธยมศึกษา(ต้น)
+        </div>
+        <div>
+          <input name="education_level" type="radio" value="มัธยมศึกษา(ปลาย)"> มัธยมศึกษา(ปลาย)
+        </div>
+        <div>
+          <input name="education_level" type="radio" value="อาชีวศึกษา"> อาชีวศึกษา
+        </div>
+        <div>
+          <input name="education_level" type="radio" value="อุดมศึกษา"> อุดมศึกษา
+        </div>
+      </div>
+      </div>
+
+
+        <div class="header form-input">
+            ข้อมูลการเรียน
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">วิชาที่เรียน</div>
+            <input class="form" name="subject" type="text" required placeholder="กรุณากรอกวิชาที่เรียน">
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">ผลการเรียน </div>
+            <input class="form" name="grade" type="text" required placeholder="กรุณากรอกผลการเรียน">
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">กิจกรรมเสริมการเรียน</div>
+            <input class="form" name="activities" type="text" required placeholder="กรุณากรอกกิจกรรมเสริมการเรียน">
+          </div>
+          <div class="header form-input">
+            ข้อมูลการสอน
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">ชื่อจริง(ครู/อาจารย์)</div>
+            <input class="form" name="firstnamet" type="text" required placeholder="กรุณากรอกชื่อจริง(ครู/อาจารย์)">
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">นามสกุล(ครู/อาจารย์)</div>
+            <input class="form" name="lastnamet" type="text" required placeholder="กรุณากรอกนามสกุล(ครู/อาจารย์)">
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">วิชาที่สอน</div>
+            <input class="form" name="taught" type="text" required placeholder="กรุณากรอกวิชาที่สอน">
+          </div>
+          <div class="flex form-input">
+            <div class="header-form">เวลาเรียน </div>
+            <input class="form" name="time" type="time" required placeholder="กรุณากรอกเวลาเรียน">
+          </div>
+          <div id="message" class="message"></div>
+      <div class="center">
+        <button onclick="submitData()" class="button">ส่งข้อมูล</button>
+      </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

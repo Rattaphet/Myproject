@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    padding: 1rem;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.container a {
+    text-decoration: none;
+    font-weight: bold; /* เปลี่ยน font-style เป็น font-weight เนื่องจากเราต้องการทำให้ตัวหนา */
+    color: #333;
+}
+
+div strong {
+    color: #ff0000;
+    margin-right: 10px;
+}
+
+/* User data styles */
+#user {
+    margin-top: 20px;
+}
+
+#user div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#user div a {
+    margin-left: 10px;
+}
+
+table {
+    width: 100%; /* ปรับให้ตารางเต็มความกว้าง */
+    margin-top: 20px; /* เพิ่ม margin ด้านบน */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+    overflow-x: auto; /* เพิ่มการเลื่อนแนวนอน */
+}
+
+th, td {
+    padding: 12px; /* เพิ่ม padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #5a5656;
+}
+
+th {
+    color: #000000;
+}
+
+/* Edit and Delete button styles */
+.delete {
+    background-color: #ff6347; 
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete:hover {
+    background-color: #d33f2f; 
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; 
+}
+body {
+    width: 1600px;
+    height: 900px;
+    margin: 0 auto; /* จัดกึ่งกลางตามแนวนอน */
+}
